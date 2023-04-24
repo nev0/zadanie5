@@ -17,4 +17,6 @@ if (mysqli_num_rows($result) == 1) {
 } else {
     echo 'Nieprawidłowe dane logowania.';
 }
+$password = "TEST";
+$hashed_password = hash('sha512', $password);
 ?>
